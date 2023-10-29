@@ -31,6 +31,7 @@ const ItemDetails = () => {
       }
     );
     const itemJson = await item.json();
+    console.log(itemJson.data);
     setItem(itemJson.data);
   }
 
@@ -59,7 +60,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
@@ -72,7 +73,7 @@ const ItemDetails = () => {
           </Box>
 
           <Box m="65px 0 25px 0">
-            <Typography variant="h3">{item?.attributes?.name}</Typography>
+            <Typography variant="h4">{item?.attributes?.name}</Typography>
             <Typography>${item?.attributes?.price}</Typography>
             <Typography sx={{ mt: "20px" }}>
               {item?.attributes?.longDescription}

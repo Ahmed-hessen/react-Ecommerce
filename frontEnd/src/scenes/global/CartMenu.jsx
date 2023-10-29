@@ -55,7 +55,7 @@ const CartMenu = ({ mode, setMode }) => {
         <Box padding="30px" overflow="auto" height="100%">
           {/* HEADER  */}
           <FlexBox marginBottom="15px">
-            <Typography variant="h3">SHOPPING CART ({cart.length})</Typography>
+            <Typography variant="h4">SHOPPING CART ({cart.length})</Typography>
             <IconButton onClick={() => dispatch(setIsCartOpen({}))}>
               <CloseIcon />{" "}
             </IconButton>
@@ -65,12 +65,12 @@ const CartMenu = ({ mode, setMode }) => {
             {cart.map((item) => (
               <Box key={`${item.attributes.name} - ${item.id}`}>
                 <FlexBox p="15px 0">
-                  <Box flex="1 1 40% ">
+                  <Box flex="1 1 40%" gap="30px">
                     <img
                       alt={item?.name}
                       width="123px"
                       height="164px"
-                      src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                      src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                     />
                   </Box>
                   <Box>

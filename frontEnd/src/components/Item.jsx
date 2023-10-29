@@ -39,7 +39,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="250px"
           height="350px"
-          src={`http://localhost:1337${url}`}
+          src={`${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />
@@ -56,7 +56,7 @@ const Item = ({ item, width }) => {
             <Box
               display="flex"
               alignItems="center"
-              bgcolor={shades.neutral[100]}
+              bgcolor={shades.neutral[200]}
             >
               <IconButton onClick={() => setCount(Math.max(count - 1, 1))}>
                 {" "}

@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "nodenext",
     "target": "ES2021",
     "checkJs": true,
     "allowJs": true
