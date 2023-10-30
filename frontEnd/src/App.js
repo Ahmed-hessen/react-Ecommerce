@@ -45,7 +45,6 @@ const App = () => {
               />
               <Route path="item/:itemId" element={<ItemDetails />} />
               <Route path="checkout" element={<Checkout />} />
-              <Route path="checkout/success" element={<Confirmation />} />
             </Routes>
             <CartMenu mode={mode} setMode={setMode} />
             <Footer />

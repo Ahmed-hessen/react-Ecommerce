@@ -75,7 +75,7 @@ const CartMenu = ({ mode, setMode }) => {
                   </Box>
                   <Box>
                     {/* Item name  */}
-                    <FlexBox mb="5px">
+                    <FlexBox m="5px 10px">
                       <Typography fontWeight="bold">
                         {item.attributes.name}
                       </Typography>
@@ -87,9 +87,11 @@ const CartMenu = ({ mode, setMode }) => {
                         <CloseIcon />
                       </IconButton>
                     </FlexBox>
-                    <Typography>{item.attributes.shortDescription}</Typography>
+                    <Typography m=" 0 10px">
+                      {item.attributes.shortDescription}
+                    </Typography>
                     {/* Amount  */}
-                    <FlexBox m="15 0 ">
+                    <FlexBox m="15px">
                       <Box
                         display="flex"
                         alignItems="center"

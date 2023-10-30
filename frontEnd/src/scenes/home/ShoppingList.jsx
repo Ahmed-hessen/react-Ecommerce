@@ -17,7 +17,7 @@ const ShoppingList = () => {
   useEffect(() => {
     async function getItems() {
       const items = await fetch(
-        "http://localhost:1337/api/items?populate=image",
+        "https://react-ecommerce-mxg4.onrender.com/api/items?populate=image",
         {
           method: "GET",
         }
