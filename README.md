@@ -56,6 +56,10 @@ Embark on a thrilling journey into the fashion cosmos with TrendyWear—a React-
 Contributions are more than welcome! Feel free to contribute to TrendyWear, where the future of online fashion is shaped with every elegant detail. 🌈🛠️
 
 **Thank you for choosing TrendyWear. Elevate your style effortlessly, and let the fashion symphony begin!** 🌟👗
+
+
+
+
 ![Screenshot (44)](https://github.com/Ahmed-hessen/react-Ecommerce/assets/128532764/e6425f84-2097-403c-ad61-1b4e453f8e54)
 
 
